@@ -38,7 +38,6 @@ const AddMovie = ({ movieGenre }) => {
   const [title, setTilte] = useState('');
   const [description, setDescription] = useState('');
   const [year, setYear] = useState('');
-  const [genreMovies, setGenreMovies] = useState();
   const [duration, setDuration] = useState('');
   const [submitDisable, setSubmitDisable] = useState(true);
   const [showToaster, setShowToaster] = useState(false);
@@ -65,8 +64,8 @@ const AddMovie = ({ movieGenre }) => {
     formData.append('title', title);
     formData.append('description', description);
     formData.append('year', year);
-    formData.append('genre', genre);
-    formData.append('selectedGenres', selectedGenres);
+    formData.append('genre', selectedGenres);
+    // formData.append('selectedGenres', selectedGenres);
     formData.append('duration', duration);
     setFormLoading(true);
     await axios.post(`${baseUrl}/movie`, formData).then((res) => {
@@ -80,10 +79,10 @@ const AddMovie = ({ movieGenre }) => {
 
   };
   const checkMovieData = {
-    img, imgTitle, title, description, year, genre, duration, trailer, video, pixels, selectedGenres
+    img, imgTitle, title, description, year, genre, duration, trailer, video, pixels
   }
   useEffect(() => {
-    const isMovie = Object.values({ img, imgTitle, title, description, year, genre, duration, trailer, video, pixels,selectedGenres }).every(item => Boolean(item));
+    const isMovie = Object.values({ img, imgTitle, title, description, year, genre, duration, trailer, video, pixels,  }).every(item => Boolean(item));
     isMovie ? setSubmitDisable(false) : setSubmitDisable(true);
   }, [checkMovieData]);
 
@@ -232,7 +231,7 @@ const AddMovie = ({ movieGenre }) => {
               <div key={genre} className="selected-genre">
                 <span style={{ marginRight: '5px' }}>{genre}</span>
                 <button className="delete-button" style={{ backgroundColor: 'transparent', border: 'none', color: '#ff0000', cursor: 'pointer', marginLeft: '5px' }} onClick={() => handleGenreDeletion(genre)}>
-                <FontAwesomeIcon icon={faCircleXmark} style={{color: "#ff0000",}} />
+                  <FontAwesomeIcon icon={faCircleXmark} style={{ color: "#ff0000", }} />
                 </button>
               </div>
             ))}

@@ -6,7 +6,7 @@ import { parseCookies } from 'nookies';
 import Link from 'next/link';
 import { SuccessToaster } from '../../components/layout/Toastr';
 import { deleteMovie, updateMovie } from '../../utils/movieActions';
-import { genreMovies } from '../../utils/genreMovies';
+import { genre } from '../../utils/genreMovies';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -24,10 +24,13 @@ const MovieName = ({ movie, user: { role } }) => {
         video: movie.video || '',
         genre: movie.genre || '',
         trailer: movie.trailer || '',
-        year: movie.year || ''
+        year: movie.year || '',
+        genre: movie.selectedGenre || '',
     })
+    console.log(movieData)
     const [showToaster, setShowToaster] = useState(false);
     const [selectedGenres, setSelectedGenres] = useState([]);
+
     const { title, description, year, duration, imgSmPoster, genre, imgLgPoster, video, trailer } = movieData;
     const handleChange = e => {
         const { name, value } = e.target;
@@ -44,6 +47,7 @@ const MovieName = ({ movie, user: { role } }) => {
         const updatedGenres = selectedGenres.filter((selectedGenre) => selectedGenre !== genre);
         setSelectedGenres(updatedGenres);
     };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         await updateMovie(movieData, id, setShowToaster, router);
@@ -81,7 +85,7 @@ const MovieName = ({ movie, user: { role } }) => {
                                 value={year ? year : movie.year}
                                 name='year'
                                 onChange={handleChange} />
-                        {/* </div>
+                            {/* </div>
                         <div className='formChild'> */}
                             <h3>Duration:</h3>
                             <input
@@ -121,8 +125,8 @@ const MovieName = ({ movie, user: { role } }) => {
                     <div className='formChild'>
                         <h3>Genre:</h3>
                         <select name="genre" onChange={handleGenreSelection}>
-                            <option selected>{movie.genre}</option>
-                            {genreMovies.map((genre) => (
+                            <option selected>{genre}</option>
+                            {genre.map((genre) => (
                                 <option>{genre}</option>
                             ))}
                         </select>
