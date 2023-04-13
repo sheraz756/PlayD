@@ -1,0 +1,264 @@
+.voucherForm{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+.voucherContent{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%); */
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 0;
+  width: 90%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 5px;
+}
+.voucherHeader{
+    padding: 20px 16px;
+    background-color: #032414;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.voucherBody {
+    padding: 25px;
+  
+ 
+}
+.voucherBodyContent{
+  display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
+    margin: 5px 0;
+  
+}
+.voucherBodyContent a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #086d3c;
+}
+.replyButton{
+
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #086d3c;
+}
+.requestMessages{
+  width: 50%;
+  padding: 15px;
+  word-wrap: break-word;
+}
+.requestMessages span{
+ font-weight: bold;
+
+}
+.voucherBodyImgContent{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.voucherBodyImgContent img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.voucherBodyImgContent p{
+  margin-left: 5px;
+  cursor:default;
+  text-transform: capitalize;
+}
+.voucherFooter{
+    padding: 10px 16px;
+    background-color: #086d3c;
+    color: white;
+  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.voucherFooter button{
+    width: 50%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #032414;
+    color: #fff;
+    cursor: pointer;
+}
+.loadingWinners{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #032414;
+  color: white;
+  padding: 20px;
+}
+.loadingWinners p{
+  margin-left: 10px;
+}
+.close {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    cursor: pointer;
+  }
+
+
+.mainDiv{
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  padding: 10px;
+}
+.mainDivInput{
+  margin-top: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  background-color: transparent;
+ 
+}
+.mainDivInputSelect{
+  margin-top: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+
+  color: black;
+ 
+}
+.mainDiv button{
+  margin-top: 20px;
+  padding: 20px;
+    border: none;
+    outline: none;
+    background-color: #032414;
+    color: white;
+    cursor: pointer;
+    transition: .5s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    height: 55px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  
+  
+}
+.mainDiv button:hover{
+  background-color: #096137;
+
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from { opacity:0} 
+    to { opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from { opacity:0}
+    to { opacity:1}
+  }
+
+  
+  .plan__grid__content{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+  .plan__grid__content label{
+   font-size: 20px;
+   font-weight: 600;
+  cursor: pointer;
+  }
+  .plan__grid__content span{
+    margin-left: 10px;
+  }
+  .plan__grid__content input{
+    width: 20px;
+   
+  }
+  
+
+
+.fullModal{
+ /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.fullModalContent{
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+}
+
+
+.fullModalBody{
+  margin: 20px;
+  padding: 10px;
+}
+
+.fullModalBodyVoucher{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+
+.voucherHeadingPrint{
+  display: flex;
+}

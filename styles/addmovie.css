@@ -1,0 +1,140 @@
+  .newProduct {
+   padding: 20px;
+  }
+  
+  .addProductForm {
+    margin-top: 10px;
+  }
+  
+  .addProductItem {             
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  
+  .addProductItem > label {
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .addProductItem > input {
+    padding: 10px;
+    width: 40%;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .addProductItem > select {
+    padding: 5px;
+    width: 40%;
+  }
+  
+  .addProductButton {
+    width: 40%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+  }
+
+  .movieUploadSection{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  button:disabled{
+    opacity:0.7;
+    cursor:not-allowed;
+  }
+  button:enabled{
+    opacity:1;
+  }
+
+
+.addSeries{
+  padding: 20px;
+  }
+
+  .addSeriesButton{
+    padding: 20px;
+  }
+
+  .addSeries > label {
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .addSeries > input {
+    padding: 10px;
+    width: 500px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .addSeries button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+  }
+
+  .addSeriesButton button{
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+  .explore__options{
+    margin: 30px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+  .explore__options h3{
+    color: crimson;
+    font-size: 1.5rem;
+    
+  }
+
+  .divider{
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    width: 10%;
+    border: 12px dotted;
+    border-style: none none dotted;
+  }
+
+
+
+  

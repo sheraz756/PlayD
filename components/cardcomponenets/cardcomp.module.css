@@ -1,0 +1,87 @@
+.cardComponent{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(100px, 1fr));
+    gap: 10px;
+    margin-bottom: 2rem;
+
+}
+
+.cardParent{
+ margin-bottom: 1rem;
+}
+.card{
+    /* cursor: pointer;
+    margin-top: 10px;
+    border: 1px solid #ededeb;
+    border-radius: 5px; */
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 250ms all;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+/* .card:hover .card__title{
+    transform: scale(1);
+} */
+.card:hover .card__delete button{
+    transform: scale(1);
+}
+.card__delete{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: right;
+    padding: 2px 10px; 
+}
+.card__delete button{
+    transform: scale(0);
+    padding: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: crimson;
+    background-color: transparent;
+    transition: 250ms ease-in;
+}
+.card__delete button:hover{
+    background-color: rgb(201, 201, 201);
+}
+
+.card__poster{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.card__poster img{
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    transition: .3s ease;
+}
+
+
+.card__title{
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+}
+.card__title h4{
+  
+    font-size: 1rem;
+    word-wrap: break-word;
+    font-weight: 600;
+}

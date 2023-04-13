@@ -1,0 +1,71 @@
+.topbar{
+    width: 100%;
+    height: 50px;
+    background-color: #020c07;
+    position:sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.topbar__wrapper{
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+   margin-top: 20px;
+}
+.logo img {
+    height: 40px;
+    width:40px;
+    object-fit: contain;
+}
+.top__right{
+    display: flex;
+    align-items: center;
+}
+.top__avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.topbar__icon__container{
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+    color: white;
+}
+.topicon__badge{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 0px;
+    top:-5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.dropdown__menu{
+    padding: 0;
+    cursor: pointer;
+}
+
+.dropdown__menu li{
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 5px;
+    position: relative;
+    text-decoration: none;
+    text-align: left;
+}

@@ -1,0 +1,183 @@
+.adduser {
+    padding: 20px;
+}
+
+.adduserTitle {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.formControl {
+    padding: 40px 32px 60px;
+
+}
+
+.formControl input,select,textarea {
+    margin-bottom: 1rem;
+    width: 60%;
+    padding: 10px;
+    outline: none;
+    font-size: 1.4rem;
+    resize: none;
+}
+
+.formControl button {
+    width: 60%;
+    min-height: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    border: 4px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.formControl button:disabled {
+    background-color: crimson;
+    color: white;
+    cursor: not-allowed;
+    opacity: .7;
+}
+
+.formControl button:enabled {
+    background-color: #13b164;
+    color: white;
+    transition: .2s ease;
+
+}
+
+.formControl button:enabled:hover {
+    background-color: #0c7543;
+    transition: .2s ease;
+}
+
+
+.available {
+    border-color: lightgreen;
+}
+
+.notAvailable {
+    border-color: crimson;
+}
+
+.customDiv {
+    position: relative;
+}
+
+.customDiv .customDivIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+.staffForm {
+    display: flex;
+    padding: 20px;
+}
+
+.staffForm .left img {
+    height: 300px;
+    width: 300px;
+    border: 3px solid #0c7543;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.staffForm .left button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #525554;
+    color: #fff;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.staffForm .right {
+    margin: 0 50px;
+    width: 100%;
+}
+
+.staffForm .right input{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+.updateStaffSelect{
+    width: 80%;
+}
+
+.staffForm .right button {
+    width: 80%;
+    padding: 20px;
+    width: 100%;
+    min-height: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    border: 4px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.staffForm .right input:disabled {
+    background-color: #c3c3c3;
+    color: black;
+    border: none;
+    cursor: not-allowed;
+}
+
+.buttonSection {
+    display: flex;
+}
+
+
+.buttonSection .update {
+    margin-right: 10px;
+    background-color: #095530;
+    color: white;
+}
+
+.buttonSection .update:hover {
+    background-color: #0c7543;
+}
+
+.buttonSection .cancel:hover {
+    background-color: crimson;
+}
+
+.buttonSection .cancel {
+    margin-left: 10px;
+    background-color: rgb(177, 18, 50);
+    color: white;
+}
+
+.formChild {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.formChild h3 {
+    font-size: 1.2rem;
+}

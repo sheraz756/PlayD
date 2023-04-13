@@ -1,0 +1,41 @@
+.table {
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.td,
+.th {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 5px;
+}
+
+.tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.image {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+
+.name {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
