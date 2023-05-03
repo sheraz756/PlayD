@@ -6,7 +6,7 @@ import { parseCookies } from 'nookies';
 import Link from 'next/link';
 import { SuccessToaster } from '../../components/layout/Toastr';
 import { deleteMovie, updateMovie } from '../../utils/movieActions';
-import { genre } from '../../utils/genreMovies';
+import { genreMovies } from '../../utils/genreMovies';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -126,7 +126,7 @@ const MovieName = ({ movie, user: { role } }) => {
                         <h3>Genre:</h3>
                         <select name="genre" onChange={handleGenreSelection}>
                             <option selected>{genre}</option>
-                            {genre.map((genre) => (
+                            {genreMovies.map((genre) => (
                                 <option>{genre}</option>
                             ))}
                         </select>

@@ -1,4 +1,4 @@
-export const genre = [
+export const genreMovies = [
     "action",
     "anime",
     "award-winning",
